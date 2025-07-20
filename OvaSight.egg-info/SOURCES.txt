@@ -1,6 +1,16 @@
+README.md
 setup.py
 OvaSight.egg-info/PKG-INFO
 OvaSight.egg-info/SOURCES.txt
 OvaSight.egg-info/dependency_links.txt
 OvaSight.egg-info/requires.txt
 OvaSight.egg-info/top_level.txt
+src/__init__.py
+src/exception.py
+src/utils.py
+src/component/__init__.py
+src/component/dataingestion.py
+src/component/model_trainer.py
+src/pipeline/__init__.py
+src/pipeline/predict_pipeline.py
+src/pipeline/train_pipeline.py
