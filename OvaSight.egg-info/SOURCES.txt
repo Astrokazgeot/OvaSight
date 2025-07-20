@@ -1,0 +1,6 @@
+setup.py
+OvaSight.egg-info/PKG-INFO
+OvaSight.egg-info/SOURCES.txt
+OvaSight.egg-info/dependency_links.txt
+OvaSight.egg-info/requires.txt
+OvaSight.egg-info/top_level.txt
