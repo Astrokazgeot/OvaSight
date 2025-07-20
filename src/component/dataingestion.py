@@ -8,6 +8,7 @@ from src.exception import CustomException
 @dataclass
 class DataIngestionConfig:
     train_dir = os.path.join("artifacts", "train")
+    val_dir = os.path.join("artifacts", "val") 
     test_dir = os.path.join("artifacts", "test")
     img_height = 180
     img_width = 180
@@ -34,13 +35,8 @@ class DataIngestion:
     def get_train_dataset(self):
         return self.load_dataset(self.config.train_dir)
 
+    def get_val_dataset(self):  
+        return self.load_dataset(self.config.val_dir)
+
     def get_test_dataset(self):
         return self.load_dataset(self.config.test_dir)
-
-if __name__ == "__main__":
-    ingestion = DataIngestion()
-    
-    train_ds = ingestion.get_train_dataset()
-    test_ds = ingestion.get_test_dataset()
-
-    print("Training and test datasets loaded.")

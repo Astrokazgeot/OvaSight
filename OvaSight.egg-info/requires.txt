@@ -3,5 +3,6 @@ uvicorn
 tensorflow
 numpy
 pandas
+keras
 pillow
 sqlalchemy
