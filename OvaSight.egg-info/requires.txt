@@ -4,5 +4,6 @@ tensorflow
 numpy
 pandas
 keras
-pillow
-sqlalchemy
+mysql-connector-python
+python-multipart
+streamlit
