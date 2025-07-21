@@ -6,7 +6,7 @@ st.title("🧬 OvaSight - PCOS Detection App")
 
 with st.form("pcos_form"):
     name = st.text_input("Name")
-    age = st.number_input("Age", min_value=1, step=1)
+    age = st.number_input("Age", min_value=1, step=1,max_value=100,format="%d")
     bmi = st.number_input("BMI", min_value=0.0, step=0.1)
     image = st.file_uploader("Upload Ultrasound Image", type=["png", "jpg", "jpeg"])
     submitted = st.form_submit_button("Predict")
